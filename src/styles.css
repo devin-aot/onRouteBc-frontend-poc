@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  /* Fonts from  https://developer.gov.bc.ca/Design-System/Typography */
+  font-family: 'BCSans', 'Noto Sans', 'Verdana', 'Arial', 'sans-serif';
+  display: flex;
+  flex-flow: column;
+}
+
+/* TODO: Make container for the components be the full height of page minus navbar and footer heights */
+.main-container {
+  min-height: 800px;
+  /*background-color: red;*/
+}
+
