@@ -6,9 +6,17 @@ body {
   flex-flow: column;
 }
 
-/* TODO: Make container for the components be the full height of page minus navbar and footer heights */
 .main-container {
   min-height: 100vh;
   background-color: gray;
 }
 
+:focus {
+  outline: 2px solid #3b99fc;
+  outline-offset: 1px;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}

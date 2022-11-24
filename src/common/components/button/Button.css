@@ -28,13 +28,6 @@ html: <button class="BC-Gov-PrimaryButton" type="button" name="button">Submit</b
   opacity: 0.8;
 }
 
-/*
-:focus {
-  outline: 4px solid #3b99fc;
-  outline-offset: 1px;
-}
-*/
-
 .BC-Gov-PrimaryButton:active {
   opacity: 1;
 }
@@ -62,27 +55,9 @@ html: <button class="BC-Gov-PrimaryButton" type="button" name="button">Submit</b
   background-color: #f2f2f2;
 }
 
-/*
-:focus {
-  outline: 4px solid #3b99fc;
-  outline-offset: 1px;
-}
-*/
-
 .BC-Gov-PrimaryButton-Dark:active {
   background-color: #fff;
 }
-
-/*
-.background-colour {
-  background-color: #003366;
-  height: 100px;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
 
 /* 
 
@@ -114,12 +89,7 @@ https://developer.gov.bc.ca/Design-System/Secondary-Button
   background-color: #003366;
   color: #ffffff;
 }
-/*
-:focus {
-  outline-offset: 1px;
-  outline: 4px solid #3b99fc;
-}
-*/
+
 .BC-Gov-SecondaryButton:active {
   opacity: 1;
 }
@@ -148,25 +118,8 @@ https://developer.gov.bc.ca/Design-System/Secondary-Button
   color: #313132;
 }
 
-/*
-:focus {
-  outline-offset: 1px;
-  outline: 4px solid #3b99fc;
-}
-*/
-
 .BC-Gov-SecondaryButton-Dark:active {
   background-color: #f2f2f2;
   color: #313132;
 }
 
-/*
-.background-colour {
-  background-color: #003366;
-  height: 100px;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
