@@ -16,7 +16,3 @@ body {
   outline-offset: 1px;
 }
 
-a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
