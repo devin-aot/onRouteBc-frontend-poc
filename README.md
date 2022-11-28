@@ -47,6 +47,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 The deployment pipeline is started once a PR is created. An instance of your branch is automatically pushed to Openshift where the suffix of the DeploymentConfig and ImageStream will be equal to the Pull Request #.
 
+TODO: Bug - sometimes need to kick imagestream to successfully deploy
+
 Each time you make a commit to the PR, the Openshift instance will be rebuilt and deployed from GitHub actions.
 
 The workflow includes unit tests, secret search, builds, and deploys.

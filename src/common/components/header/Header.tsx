@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import "./Header.css";
+import "./Header.scss";
 import { PATHS } from "../../../constants/paths";
 
 interface IListItemProps {

@@ -10,7 +10,7 @@ export const Dashboard = React.memo(() => {
   return (
     <div>
       <p>Manage Vehicles Dashboard</p>
-      <Button color={"primary"} onClick={onClickTest}>Create New</Button>
+      <Button color={"BC-Gov-PrimaryButton"} onClick={onClickTest}>Create New</Button>
     </div>
   );
 });

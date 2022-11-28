@@ -1,18 +1,17 @@
 import React from "react";
-import "./Button.css";
+import "./Button.scss";
 
 interface IButtonProps {
   children: React.ReactNode;
-  color?: "primary" | "secondary"; // bcgov primary or secondary
+  color?: "BC-Gov-PrimaryButton" | "BC-Gov-SecondaryButton";
   onClick: () => void;
 }
 
-export const Button = ({ children, color = "primary", onClick } : IButtonProps) => {
-  const isPrimary: boolean = color === "primary";
+export const Button = ({ children, color = "BC-Gov-PrimaryButton", onClick } : IButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={isPrimary ? "BC-Gov-PrimaryButton" : "BC-Gov-SecondaryButton"}
+      className={color}
     >
       {children}
     </button>
