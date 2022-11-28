@@ -7,8 +7,13 @@
 - React / Typescript
 - Docker
 - Jest
-- Redux (not yet implemented)
-- SASS (not yet implemented)
+- SASS
+- SonarCloud? (not yet implemented)
+
+## Typescript cheatsheet
+
+[https://github.com/typescript-cheatsheets/react](https://github.com/typescript-cheatsheets/react)
+
 
 ## Installation
 
