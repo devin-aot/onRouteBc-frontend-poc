@@ -13,6 +13,7 @@ export const AppRoutes = () => {
         <Routes>
             <Route path={PATHS.home.href} element={<HomePage/>}/>
             <Route path={PATHS.manageVehicles.href} element={<Dashboard/>}/>
+            {/* TODO: add a 404 route */}
         </Routes>
     </div>
   );

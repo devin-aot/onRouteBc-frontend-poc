@@ -3,12 +3,12 @@ import "./Button.css";
 
 interface IButtonProps {
   children: React.ReactNode;
-  type: string; // bcgov primary or secondary
-  onClick?: () => void;
+  color?: "primary" | "secondary"; // bcgov primary or secondary
+  onClick: () => void;
 }
 
-export const Button: React.FC<IButtonProps> = ({ children, type, onClick }) => {
-  const isPrimary: boolean = type === "primary";
+export const Button = ({ children, color = "primary", onClick } : IButtonProps) => {
+  const isPrimary: boolean = color === "primary";
   return (
     <button
       onClick={onClick}
