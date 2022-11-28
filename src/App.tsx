@@ -5,7 +5,7 @@ import { AppRoutes } from "./routes/Routes";
 import { Header } from "./common/components/header/Header";
 import { Footer } from "./common/components/footer/Footer";
 
-const App: React.FC = () => {
+const App = () => {
 
   return (
     <>
