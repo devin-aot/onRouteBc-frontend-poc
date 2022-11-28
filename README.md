@@ -15,14 +15,18 @@
 [https://github.com/typescript-cheatsheets/react](https://github.com/typescript-cheatsheets/react)
 
 
-## Installation
+## Run the application using Docker
 
-* Open a terminal
-* Clone the repository:
+* onroutebc-frontend service uses port 3000, make sure the port is available.
+* Run `docker compose up -d` to start.
 
-```
-$ git clone https://github.com/devin-aot/onRouteBc-frontend-poc.git
-```
+*NOTE: Use --build command with the start command to reflect any future **.env** changes eg : `docker compose up --build -d`*
+
+* To stop the application
+   * Run `docker compose stop` to stop.
+
+
+## Run the application locally
 
 * Ensure that you are using Node 18 (`npm ci` may fail with other versions of Node)
 * From the root directory:

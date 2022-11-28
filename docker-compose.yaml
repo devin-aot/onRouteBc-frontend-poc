@@ -1,15 +1,12 @@
 ---
-version: '3.3'
+version: '0.0'
+
 services:
-  react-web:
+  onroutebc-frontend:
     build:
-      dockerfile: ./Dockerfile
-      context: "./"
-    image: web:dev
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    stdin_open: true
-    volumes:      
-      - ./../web:/react-web
-      - /react-web/node_modules
+    tty: true
 
