@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import "./Header.scss";
-import { PATHS } from "../../../constants/paths";
+import * as routes from "../../../constants/routes";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 interface IListItemProps {
   path: string;
@@ -42,7 +45,7 @@ export const Header = () => {
 
   const Brand = () => (
     <div className="banner">
-      <a href={PATHS.home.href}>
+      <a href={routes.HOME}>
         <img
           src="https://developer.gov.bc.ca/static/BCID_H_rgb_rev-20eebe74aef7d92e02732a18b6aa6bbb.svg"
           alt="Go to the onRouteBc Home Page"
@@ -56,7 +59,7 @@ export const Header = () => {
   const NavButton = () => (
     <div className="other">
       <button className="nav-btn" onClick={toggleDropdown}>
-        <i className="fas fa-bars" id="menu"></i>
+        <FontAwesomeIcon icon={faBars} />
       </button>
     </div>
   );
@@ -75,10 +78,10 @@ export const Header = () => {
       id="navbar"
       style={{ display: !showDropdownMenu ? "block" : "none" }}
     >
-      <div className="container">
+      <div className="list-container">
         <ul>
-          <ListItem path={PATHS.home.href} label={PATHS.home.label}/>
-          <ListItem path={PATHS.manageVehicles.href} label={PATHS.manageVehicles.label}/>
+          <ListItem path={routes.HOME} label="Home"/>
+          <ListItem path={routes.MANAGE_VEHICLES} label="Manage Vehicles"/>
         </ul>
       </div>
     </nav>

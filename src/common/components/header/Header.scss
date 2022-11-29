@@ -3,10 +3,9 @@ header {
   border-bottom: 2px solid #fcba19;
   padding: 0 30px 0 30px;
   color: #fff;
-  display: flex;
+  display: flex !important;
   height: 65px;
   top: 0;
-  position: fixed;
   width: 100%;
   -webkit-box-shadow: 0 6px 8px -4px #b3b1b3;
   -moz-box-shadow: 0 6px 8px -4px #b3b1b3;
@@ -51,7 +50,7 @@ header .nav-btn {
 
 .navigation-main {
   display: none;
-  position: fixed;
+  position: sticky;
   top: 65px;
   color: #fcba19;
   background-color: #38598a;
@@ -61,11 +60,11 @@ header .nav-btn {
   box-shadow: 0 6px 8px -4px #b3b1b3;
 }
 
-.navigation-main .container {
+.navigation-main .list-container {
   padding: 10px 0 10px 0;
 }
 
-.navigation-main .container ul {
+.navigation-main .list-container ul {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -74,11 +73,11 @@ header .nav-btn {
   margin-left: -25px;
 }
 
-.navigation-main .container ul li {
+.navigation-main .list-container ul li {
   margin: 5px 0;
 }
 
-.navigation-main .container ul li a {
+.navigation-main .list-container ul li a {
   display: flex;
   font-size: 0.813em;
   font-weight: normal;  /* 400 */
@@ -87,17 +86,13 @@ header .nav-btn {
   text-decoration: none;
 }
 
-.navigation-main .container ul li a:hover {
+.navigation-main .list-container ul li a:hover {
   text-decoration: underline;
 }
 
-.navigation-main .container ul .active {
+.navigation-main .list-container ul .active {
   text-decoration: underline;
   font-weight: bold;
-}
-
-.nav-container {
-  margin-bottom: 65px;
 }
 
 .banner a {
@@ -115,20 +110,16 @@ header .nav-btn {
     display: block;
   }
 
-  .navigation-main .container ul {
+  .navigation-main .list-container ul {
     flex-direction: row;
   }
 
-  .navigation-main .container ul li {
+  .navigation-main .list-container ul li {
     margin: 0;
   }
   
-  .navigation-main .container ul li a {
+  .navigation-main .list-container ul li a {
     border-right: 1px solid #9b9b9b;
-  }
-
-  .nav-container {
-    margin-bottom: 105px;
   }
 
   .banner a {
@@ -148,9 +139,6 @@ header .nav-btn {
     font-size: calc(7px + 2.2vw);
   }
 
-  .nav-container {
-    margin-bottom: 105px;
-  }
 }
 
 @media screen and (min-width: 900px) {
@@ -158,7 +146,4 @@ header .nav-btn {
     font-size: 2.0em;
   }
 
-  .nav-container {
-    margin-bottom: 105px;
-  }
 }
